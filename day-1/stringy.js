@@ -111,8 +111,8 @@ function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 //turning string into an array
 var newArray = string.split('');
-    //using if else chain to access the first index of newArray to compare to char
-    if(newArray[0].toLowerCase() === char){
+    //using if else chain to compare the first index of newArray to char regardless upper or lower case
+    if(newArray[0].toLowerCase() === char || newArray[0].toUpperCase() === char){
         //if they are the same return true
         return true;
     }else {
@@ -135,11 +135,23 @@ var newArray = string.split('');
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/* 
+i: string and a character
+o: true if character is letter that string ends with regrdless of case, and false if it is not.
+*/
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
+//initailizing string into an array
+var newArray = string.split('');
+let newArrayTwo = newArray.length - 1;
+//accessing the last element in an array and comparing it to char regardless of case
+if(newArrayTwo === char.toLowerCase() || newArrayTwo === char.toUpperCase){
+    //return true 
+    return true;
+} else{
+    //return false
+return false;
+}
     // YOUR CODE ABOVE HERE //
 }
 
@@ -148,9 +160,14 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+/*
+i: two strings
+o: two strings concatenated into one 
+*/
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    //returning string one concatenated with string tw
+return stringOne.concat(stringTwo);
 
 
     // YOUR CODE ABOVE HERE //
