@@ -21,8 +21,18 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
+    //creates new string
+    var newString;
+    //turning input of string into array
+    var newArray = input.split('');
+    //using a for loop to access items in array in reverse 
+    for(var i = newArray.length - 1; i >= 0; i--){
+      newString = newString + newArray[i];
+    }
+    //returning array to new string
+
+    //returns newString
+    return newString;
     
     
     // YOUR CODE GOES ABOVE HERE //

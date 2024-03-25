@@ -23,22 +23,37 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+/* 
+i: string
+o: new string all lowercase
+*/
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+//declaring new string
+var newString;
+//using .toLowerCase()
+newString = string.toLowerCase();
+//returning newstring forced to lowercase
+return newString;
     // YOUR CODE ABOVE HERE //
 }
 
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+
+/* 
+i: string
+o: new string all uppercase 
+*/
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+//declaring new string
+var newString;
+//using .toUpperCase()
+newString = string.toUpperCase();
+//returning new string
+return newString;
     // YOUR CODE ABOVE HERE //
 }
 
@@ -55,11 +70,22 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+
+/* 
+i: string
+o: return new string with dash-case and enforced lowercase
+*/
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+//declaring new string
+var newString;
+/* 
+assigning newString the value of the funtion toLowerCase, and calling it
+with the input and a global replaceAll() to remove the spaces from a string and replace with '-' 
+*/
+newString = toLowerCase(string.replaceAll(' ', '-'));
+//returning new string
+return newString;
     // YOUR CODE ABOVE HERE //
 }
 
@@ -75,10 +101,24 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/* 
+i: string and a single character
+o: returns true if string begins with character, or otherwise false
+c: function is case insensitive 
+*/
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
+//turning string into an array
+var newArray = string.split('');
+    //using if else chain to access the first index of newArray to compare to char
+    if(newArray[0].toLowerCase() === char){
+        //if they are the same return true
+        return true;
+    }else {
+        //else return false
+        return false;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
