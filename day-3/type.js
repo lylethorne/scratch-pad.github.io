@@ -12,9 +12,21 @@
  * TIP: In JavaScript, how can we decipher if a value is an Array? Can typeof
  * work?
  */
+
+/*
+i:value
+o: return true if value is array, otherwise false
+*/
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
+    //using if else chain to test if value is an array is true
+   if(Array.isArray(value) === true){
+    //return true
+    return true;
+   } else {
+    //otherwise return false
+    return false
+   }
     
     
     

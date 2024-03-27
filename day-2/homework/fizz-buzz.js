@@ -31,17 +31,19 @@ while(count >= 0 && count <= 99){
         //prints fizzbuzz
         console.log('FizzBuzz');
         //if it is only divisible by 3
-     }else if(count % 3 === 0){
+    }else if(count % 3 === 0){
         //print fizz
         console.log('Fizz');
         //only divisible by 5
-     }else if (count % 5 === 0){
+    }else if (count % 5 === 0){
         //print buzz
         console.log('Buzz');
-     }
+        //finaly else statement for count
+    }else {
+        //print ittttt
+        console.log(count);
+    }
 }
-//print ittttt
-console.log(count);
 
     // YOUR CODE GOES ABOVE HERE //
 }
