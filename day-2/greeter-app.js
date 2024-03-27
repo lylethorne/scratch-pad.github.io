@@ -35,9 +35,26 @@
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    //creating if else chain 
+    //if hour is greater or equal to 0 and less or equal to 11
+   if(hour >= 0 && hour <= 11){
+    //'Good Morning!' will print to the console
+    console.log('Good Morning!');
+    //if first conditions were bypassed it will flow onto the second
+    //if hour is greater or equal to 12 but less or equal to 16
+   } else if(hour >= 12 && hour <=16){
+    //prints good afternoon
+    console.log('Good Afternoon!');
+    //if hour is greater or equal to 17 but less than 21
+   }else if(hour >= 17 && hour <= 21){
+    //prints good evening
+    console.log('Good Evening!');
+    /*in my brain, it makes sense to leave this last else/if chain rather than a simple 'else'
+    if there is an error where hour receives an input larger than 24, I don't want it to perform anything
+    */
+   }else if(hour >=22 && hour <= 24){
+    console.log('Good Night!');
+   }
     
     // YOUR CODE ABOVE HERE //
 }

@@ -141,17 +141,17 @@ o: true if character is letter that string ends with regrdless of case, and fals
 */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-//initailizing string into an array
-var newArray = string.split('');
-let newArrayTwo = newArray.length - 1;
-//accessing the last element in an array and comparing it to char regardless of case
-if(newArrayTwo === char.toLowerCase() || newArrayTwo === char.toUpperCase){
-    //return true 
-    return true;
-} else{
-    //return false
-return false;
-}
+//initailizing a variable to hold the last index of string length
+var stringIndex = string[string.length - 1];
+    //comparing it to char regardless of case to the last letter of string
+    if(stringIndex === char.toLowerCase() || stringIndex === char.toUpperCase()){
+    //return true if the char matches 
+        return true;
+    } 
+        //return false if it does not
+        return false;
+    
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -186,7 +186,8 @@ return stringOne.concat(stringTwo);
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-
+    //return a string joined from the arguments
+return args.join('');
 
     // YOUR CODE ABOVE HERE //
 }
@@ -200,9 +201,21 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+/*
+i: two strings
+o: return of longest of two 
+*/
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    //if else chain using length property for both strings
+if(stringOne.length > stringTwo.length){
+    //return string one if its longer
+    return stringOne;
+    //else if string one is shorter than string two
+}else if( stringOne.length < stringTwo.length){
+    //return string two
+    return stringTwo;
+}
 
 
     // YOUR CODE ABOVE HERE //
@@ -215,10 +228,22 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+/*
+i: two strings
+o: 1 x if first is higher,
+    - 1 x if second is higher,
+    0 if equal
+*/
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+    if(stringOne > stringTwo){
+        return -1;
+     }else if(stringTwo > stringOne){
+        return  1;
+     }else if (stringOne === stringTwo){
+        return 0;
+     }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -233,7 +258,14 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+//using if else chain
+if(stringOne < stringTwo){
+   return -1;
+}else if(stringTwo < stringOne){
+   return  1;
+}else if (stringOne === stringTwo){
+   return 0;
+}
 
 
 
