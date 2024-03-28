@@ -59,7 +59,13 @@ function isObject(value) {
     }else if(value === null){
         //returning false if true
         return false;
+        //testing for any type of to detect string/number/boolean/etc
+    } else if(typeof value !== 'object' ){
+        //return false if it is
+        return false;
+        //testing for any type of to detect object
     }else if(typeof value === 'object'){
+        //return true if it is an objct
         return true;
     }
     
@@ -81,6 +87,10 @@ function isCollection(value) {
         //using strict equality to compare for null
     }else if(value === null){
         //returning false if true
+        return false;
+        //testing for any type of to detect string/number/boolean/etc
+    } else if(typeof value !== 'object' ){
+        //return false if it is
         return false;
         //finally testing if an array or an object
     } else if(Array.isArray(value) === true || typeof value === 'object'){

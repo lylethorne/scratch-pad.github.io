@@ -59,16 +59,14 @@ function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     //returning function that accepts a string
     return function(string){
-        //assigning newArrray to the string into an array
-        let newArray = string.split('');
-        //accessing the first character in array and seeing if it matches startsWith no matter case
-        if(newArray[0] === startsWith.toUpperCase() || newArray[0] === startsWith.toLowerCase()){
-            //return function?
+        //accessing the first character in string and seeing if it matches startsWith no matter case
+        if(string[0] === startsWith.toUpperCase() || string[0] === startsWith.toLowerCase()){
+            //return true
+            return true;
+        } else{
+            return false
         }
-    };
-
-    
-    
+    }; 
     // YOUR CODE ABOVE HERE //
 }
 
@@ -79,7 +77,16 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+    //returning function that accepts a string
+    return function(string){
+        //accessing the last character and seeing if it matches endsWith no matter case
+        if(string.length - 1 === endsWith.toUpperCase() || string.length - 1 === endsWith.toLowerCase()){
+            //return true
+            return true;
+        }else {
+            return false;
+        }
+    };
     
     
     
