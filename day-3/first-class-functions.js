@@ -80,16 +80,14 @@ function createEndsWithFilter(endsWith) {
     //returning function that accepts a string
     return function(string){
         //accessing the last character and seeing if it matches endsWith no matter case
-        if(string.length - 1 === endsWith.toUpperCase() || string.length - 1 === endsWith.toLowerCase()){
+        if(string.charAt(string.length - 1) === endsWith.toUpperCase() || string.charAt(string.length - 1) === endsWith.toLowerCase()){
             //return true
             return true;
         }else {
+            //return false if it does not match
             return false;
         }
     };
-    
-    
-    
     // YOUR CODE ABOVE HERE //
 }
 
