@@ -18,12 +18,11 @@ o: return a function that tests wheather given values is greater than base
 */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    function(value){
+    //returning function that takes a given value
+    return function(value){
+        //return if the value is greater than the base
         return value > base;
-    }
-    
-    
-    
+    };
     // YOUR CODE ABOVE HERE //
 }
 
@@ -32,12 +31,18 @@ function createGreaterThanFilter(base) {
  * return a Function that tests whether a given value is less than the 
  * base.
  */
+
+/*
+i: base
+o: return function that tests if given value is less than base
+*/
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    //returning a function that takes a given value
+    return function(value){
+        //returning if the value is less than the given base
+        return value < base;
+    };
     // YOUR CODE ABOVE HERE //
 }
 
@@ -46,10 +51,22 @@ function createLessThanFilter(base) {
  * Function that tests whether a given String starts with the startsWith 
  * character.
  */
+/*
+i: single character
+o: return a function that tests if given string startswith character
+*/
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
+    //returning function that accepts a string
+    return function(string){
+        //assigning newArrray to the string into an array
+        let newArray = string.split('');
+        //accessing the first character in array and seeing if it matches startsWith no matter case
+        if(newArray[0] === startsWith.toUpperCase() || newArray[0] === startsWith.toLowerCase()){
+            //return function?
+        }
+    };
+
     
     
     // YOUR CODE ABOVE HERE //
