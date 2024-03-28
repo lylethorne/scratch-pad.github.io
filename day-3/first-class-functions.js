@@ -98,11 +98,21 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+/*
+i: array of stringsstring and a function to modify string
+o: return an array of the strings - modified
+*/
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    //creating an empty array 
+    let newArray = [];
+    //creating for loop over array
+    for(var i = 0; i < strings.length; i++){ 
+        //pushing strings to be modified onto new array
+        newArray.push(modify(strings[i]));
+        };
+        //returning new array
+        return newArray;
     
     // YOUR CODE ABOVE HERE //
 }
@@ -116,11 +126,21 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+/*
+i: an array of strings
+o: return a boolean if it passed, return true if all passed
+*/
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    //creating for loop
+    for(var i = 0; i < strings.length; i++){
+        //if the strings at the index equal the test function
+        if (test(strings[i]).length - 1 === strings[i].length - 1){
+            return true;
+        }else {
+            return false;
+        }
+    }
     
     // YOUR CODE ABOVE HERE //
 }

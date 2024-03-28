@@ -23,10 +23,17 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
+    let newArray = [];
+    while(start < end){
+        newArray.push(start);
+        start++;
+    }
+    while(start >= end){
+        newArray.push(start);
+        start--;
+    }
     
-    
-    
-    
+    return newArray;
     // YOUR CODE GOES ABOVE HERE //
 }
 
