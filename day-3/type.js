@@ -48,11 +48,11 @@ o: true if value is object - but not an array, date, or null
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     //starting if block to test if value is an array 
-    if(Array.isArray(value)){
+    if(Array.isArray(value) === true){
         //returning false for object if value equals true in above
         return false;
         //using instanceof to search for Date constructor
-    }else if (value instanceof Date){
+    }else if (value instanceof Date === true){
         //returning false if value is true for dc
         return false;
         //using strict equality to compare
@@ -62,10 +62,6 @@ function isObject(value) {
     }else if(typeof value === 'object'){
         return true;
     }
-    
-    
-    
-    
     
     // YOUR CODE ABOVE HERE //
 }
@@ -79,7 +75,7 @@ function isObject(value) {
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     //starting if chain checking for date
-    if (value instanceof Date){
+    if (value instanceof Date === true){
         //returning false if value is true for dc
         return false;
         //using strict equality to compare for null
@@ -115,10 +111,27 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+   // if chain to determine if value is an array
+   if(Array.isArray(value) === true){
+    //returning string array if value is true
+    return 'array';
+    //if value is a date
+   }else if(value instanceof Date === true){ 
+    //return string of date
+    return 'date';
+    //if value strictly equals null
+   }else if(value === null){
+    //return string null
+    return 'null';
+    //else if typeof equals object
+   }else if (typeof value === 'object'){
+    //return string
+    return 'object';
+   }else{
+    //otherwise just return the type of the value
+    //all other datatypes work with typeof
+    return typeof value;
+   }
     // YOUR CODE ABOVE HERE //
 }
 
