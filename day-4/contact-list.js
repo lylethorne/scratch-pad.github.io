@@ -52,6 +52,19 @@ function makeContactList() {
         },
         addContact: function(contact){
             contacts.push(contact);
+        },
+        findContact: function(fullName){
+        if(fullName[0] === contacts.nameFirst && fullname[2] ===contacts.lastName){
+            return contact;
+        }else {
+            return undefined;
+        }
+        },
+        removeContact: function(contact){
+            contacts.splice(0, 1);
+        },
+        printAllContactNames: function(){
+            console.log()
         }
     }
 }

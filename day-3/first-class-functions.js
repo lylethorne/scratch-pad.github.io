@@ -135,13 +135,11 @@ function allStringsPass(strings, test) {
     //creating for loop
     for(var i = 0; i < strings.length; i++){
         //if the strings at the index equal the test function
-        if (test(strings[i]).length - 1 === strings[i].length - 1){
-            return true;
-        }else {
+        if (test(strings[i]) !== true){
             return false;
         }
     }
-    
+    return true;
     // YOUR CODE ABOVE HERE //
 }
 
