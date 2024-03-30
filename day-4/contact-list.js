@@ -53,18 +53,25 @@ function makeContactList() {
         addContact: function(contact){
             contacts.push(contact);
         },
+        //find contact function that accepts a full name and compares it to contacts
         findContact: function(fullName){
-        if(fullName[0] === contacts.nameFirst && fullname[2] ===contacts.lastName){
-            return contact;
-        }else {
-            return undefined;
+            //looping over contacts array
+            for(var i = 0; i < contacts.length; i++ ){
+        if(fullName[0] === contacts[i]['nameFirst'] && fullName[2] === contacts[i]['lastName']){
+            return contacts[i];
         }
+    }
+            return undefined;
+        
         },
         removeContact: function(contact){
             contacts.splice(0, 1);
         },
         printAllContactNames: function(){
-            console.log()
+            //looping over array
+            for(var i = 0; i < contacts.length; i++){
+            return contacts[i]['nameFirst'] + ' ' + contacts[i]['nameLast'];
+            }
         }
     }
 }
