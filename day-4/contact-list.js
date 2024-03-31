@@ -57,27 +57,33 @@ function makeContactList() {
         findContact: function(fullName){
             //looping over contacts array
             for(var i = 0; i < contacts.length; i++ ){
-        if(fullName[0] === contacts[i]['nameFirst'] && fullName[2] === contacts[i]['lastName']){
+                //if full name strictly equals contact iteration key of first name with a space and last name
+        if(fullName === contacts[i].nameFirst + ' ' + contacts[i].nameLast){
+            //return that contact object!
             return contacts[i];
         }
     }
-            return undefined;
+    //return undefined if undefined
+    return undefined;
+   
         
         },
         removeContact: function(contact){
             contacts.splice(0, 1);
         },
         printAllContactNames: function(){
+            //making a new string to hold all the names
+            let newString = '';
             //looping over array
             for(var i = 0; i < contacts.length; i++){
-            return contacts[i]['nameFirst'] + ' ' + contacts[i]['nameLast'];
-            }
+                //assigning newString to the first/last name of each iteration with a space and break
+            newString += contacts[i].nameFirst + ' ' + contacts[i].nameLast + '\n';
+            //return new string
+        }
+        return newString;
         }
     }
 }
-
-
-
 
 // YOUR CODE GOES ABOVE HERE //
 
