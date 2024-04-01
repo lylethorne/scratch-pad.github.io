@@ -80,7 +80,7 @@ function makeContactList() {
             newString += contacts[i].nameFirst + ' ' + contacts[i].nameLast + '\n';
             //return new string
         }
-        return newString;
+        return newString.slice(0, -1);
         }
     }
 }
