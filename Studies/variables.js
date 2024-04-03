@@ -26,17 +26,17 @@
  */
 
 
-//Declaration here
-var name;
+//Declaration without an assignment
+var name; 
+console.log(name); // will log undefined due to not being assigned
 
 ///assignment here
  name = 'Lyle'; //assigning name to 'Lyle'
-
+console.log(name); // will log 'Lyle'
 
 //var let and const coding here
 // reassigning name to 'llllyle'
 name = 'llllye'; 
-//logging to console what name will print
 console.log(name); //'llllyle' will print
 
 //declaring variable age and assigning it to 32
