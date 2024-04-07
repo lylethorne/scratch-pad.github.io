@@ -1,1 +1,11 @@
 ///YOU NEED A CODED EXAMPLE FOR EVERY SINGLE TYPE OF OPERATOR EXCEPT URNAIRY
+/**
+ * 
+ * 0.
+ * 
+ * 1.
+ * 
+ * 2. 
+ * 
+ * 
+ */
