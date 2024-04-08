@@ -1,5 +1,5 @@
 /**
- * OPERATOR
+ * OPERATORS:
  * 
  * 0. An Operator is a type of syntax that consists of alphabetical characters, punctuation, and integers.
  * These characters are reserved in the program because they have a built in functionality.
