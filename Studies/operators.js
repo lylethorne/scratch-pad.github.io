@@ -1,4 +1,3 @@
-///YOU NEED A CODED EXAMPLE FOR EVERY SINGLE TYPE OF OPERATOR EXCEPT UNARY
 /**
  * OPERATOR
  * 
@@ -147,3 +146,35 @@ if(o >= 10){ // if o is greater or equal to 10
 if(o <= 20){ //if o is less or equal to 20
     console.log('still under 20 though'); // print still under 20 though // it prints
 }
+
+// 4. Logical operators
+//and 
+let p = 34; //initz p to 34
+let q = 22; // initz q to 22
+if(p % 2 === 0 && q % 2 === 0){ // if remainder of p strictly equals 0 AND q
+    console.log('both are even'); // print both are even // which prints
+}
+//or
+//using p and q from above
+if(p % 2 === 0 || q % 2 === 0){ // if remainder p SE 0 OR q 
+    console.log('at least one is even'); //prints at least one is even
+}
+
+//not
+let r = !true; // initz r to not true
+console.log(r); // prints false
+
+
+// 5. Unary operators
+//delete
+let s = [1, 2, 3, 4]; // initz s to an array holding 1 thru 4
+delete s[2]; // deleting the value at the second index of s' array // 3 is deleted
+console.log(s); //prints [1, 2,, 4] because delete removes the value but not the index
+
+// 6. Ternary operator
+//simplifies the if/else statements
+let driveAge = (age < 16) ? 'cant drive yet':'now you can drive';
+//driveAge is assigned to the value of age if it is under 16 'cant drive yet' 
+//is assigned to the variable canIDrive : else if age is greater than 16
+// 'now you can drive' is assigned to canIDrive 
+
