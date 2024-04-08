@@ -64,7 +64,35 @@ function division(num1, num2){ //declaring a function that takes 2 parameters
 console.log(division(6, 2)); // logging the function called with 6 and 2 // 3 will print
 
 //remainder
+let c = 66; // initz c to 66
+if(c % 2 === 0){ // if the remainder of c is strictly equal to 0
+    console.log('this is even'); // print 'this is even'
+}else{ //else if the remainder is not SE to 0
+    console.log('this is odd'); //print 'this is odd'
+}
+//'this is even' will print
+
 //multiplication
+let d = 2; //initz d to 2
+let e = 4; // initz e to 4
+let f = d * e; // initiz f to the value of d multiplied by e
+console.log(f); // 8 will print
+
 //exponential
+//using the same d and e from above
+let g = d ** e; // initz g to the value of d raised to the power of e
+console.log(g); // 16 prints
+
 //incriment
+let h = 0; // initz h to 0
+while(h <= 3){ // using a while loop to iterate until h is greater or equal to 3
+    console.log('worm'); // prints worm
+    h++; // using the increment so that each iteration will increase by 1
+}
+// 'worm' is printed 4 times
+
 //decrement
+let l = [1, 2, 3]; // initz l to an array of numbers 1 2 3
+for(let i = l.length; i >= 0; i--){ // using a for loop to access the array in reverse
+    console.log(l[i]); // prints 3 2 1
+}
