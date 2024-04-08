@@ -37,3 +37,34 @@
  * 
  * 
  */
+
+// 1. Assignment operators
+//initializing count and assigning it to 1
+let count = 1;
+//assigning + 1 to whatever count is equal to // count now equal to 2
+count += 1;
+//assigning - 2 to value of count // count is now 0
+count -= 2;
+
+// 2. Arithmetic operators
+//addition 
+let x = 2; // initz x to 2
+let y = 7; // initz y to 7
+console.log(x + y); // prints 9 to the console
+
+//subraction
+let a = 9; // initz a to 9
+let b = a - 2; // initz b to the value of a minus 2
+console.log(b); // 7 prints to the console
+
+//division
+function division(num1, num2){ //declaring a function that takes 2 parameters
+    return num1 / num2; //return the first parameter divided by the second
+}
+console.log(division(6, 2)); // logging the function called with 6 and 2 // 3 will print
+
+//remainder
+//multiplication
+//exponential
+//incriment
+//decrement
