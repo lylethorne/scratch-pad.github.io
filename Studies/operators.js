@@ -96,3 +96,54 @@ let l = [1, 2, 3]; // initz l to an array of numbers 1 2 3
 for(let i = l.length; i >= 0; i--){ // using a for loop to access the array in reverse
     console.log(l[i]); // prints 3 2 1
 }
+
+// 3. Comparison operators
+// equal to
+let j = 3; // initz j to number of 3
+if(j == '3'){ // if value of j is equal to a string value of 3
+    console.log(true); //true does print
+}
+
+//strictly equal
+//using the same from above
+if(j === '3'){ // if value of j matches in value and type to string value of 3
+    console.log(true); //print true
+}else{ // else
+    console.log(false); //print false // false prints because number and string are different data types
+}
+
+//not equal
+let k = 5; //initz k to 5
+if (k != 9){ //if k is not equal to 9 
+    console.log('not nine') // print not nine // not nine prints
+}
+
+//not strictly equal
+//using k from above
+if(k !== 5){ // if k does not strictly equal number 5
+    console.log('not five'); //print not five
+} else{ //else 
+    console.log('high five'); //print high five // high five prints
+}
+//greater than
+let m = 2; //initz m to 2
+let n = 8; // initz n to 8
+if(n > m){ // if n is greater than m
+    console.log('greater than'); //print greater than // greater than prints
+}
+//less than
+//using m and n from above
+if(m < n){ //if m is less than n
+    console.log('less than'); //print less than // less than prints
+}
+//equal or greater than
+let o = 15; //initz o to 15
+if(o >= 10){ // if o is greater or equal to 10
+    console.log('equal or greater than 10');//print 'equal or greater than 10 // it prints
+}
+
+//equal or lessthan
+//using o from above
+if(o <= 20){ //if o is less or equal to 20
+    console.log('still under 20 though'); // print still under 20 though // it prints
+}
