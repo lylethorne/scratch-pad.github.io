@@ -4,8 +4,10 @@
  * 0. An Operator is a type of syntax that consists of alphabetical characters, punctuation, and integers.
  * These characters are reserved in the program because they have a built in functionality.
  * 
+ * 
  * 1. Assignment operators are used when variables are being assigned '=' to data. They can also be
  * used to manipulate the data by addition '+=' and subtraction '-='.
+ * 
  * 
  * 2. Arithmetic operators allow math to perform in code. There is add '+', subtract '-', 
  * division '/', mulitiplication '*', exponentiation '**', remainder '%', increment '++', 
@@ -13,15 +15,18 @@
  * just as within mathmatics - when multiple arithmetic operators are present, operator 
  * precedence takes place (multiplication is done before addition, etc...).
  * 
+ * 
  * 3. Comparison operators are used to determine equity or diference in logical statements.
  * Generally the result of using one of these will result in a true or false value.
  * There is equal to '==', equal value and type '===', not equal to '!=', not equal to value
  * nor type '!==', greater than '>', less than '<', equal or greather than '>=', equal or 
  * less than '<='.
  * 
+ * 
  * 4. Logical operators are used to determine the logic betwen variables or values. There is
  * and '&&', or '||', not '!'. The first two are used when there are multiple conditions that must
  * be true or false in order for that next piece of code to run.
+ * 
  * 
  * 5. Unary operators are an action with only one operand. Types include delete 'delete'
  * used on complex data properties, type of 'typeof' returns what type of data is being 
@@ -176,5 +181,5 @@ console.log(s); //prints [1, 2,, 4] because delete removes the value but not the
 let driveAge = (age < 16) ? 'cant drive yet':'now you can drive';
 //driveAge is assigned to the value of age if it is under 16 'cant drive yet' 
 //is assigned to the variable canIDrive : else if age is greater than 16
-// 'now you can drive' is assigned to canIDrive 
+// 'now you can drive' is assigned 
 
