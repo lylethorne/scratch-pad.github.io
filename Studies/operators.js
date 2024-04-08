@@ -24,9 +24,16 @@
  * and '&&', or '||', not '!'. The first two are used when there are multiple conditions that must
  * be true or false in order for that next piece of code to run.
  * 
- * 5. Unary operators
+ * 5. Unary operators are an action with only one operand. Types include delete 'delete'
+ * used on complex data properties, type of 'typeof' returns what type of data is being 
+ * referenced with exceptions (arrays, Date(), null, and object, all return 'object'), not '!'
+ * turns the following expression to its opposite (!true //returns false).
  * 
- * 6. Ternary operators
+ * 
+ * 6. Ternary operators are also known as conditional operators. They are used to assign
+ * value to a variable dependent on a condition being true or false. It is expressed as
+ * variable = (condition) ? value1:value2; the character '?' represents the 'if' statement
+ * while ':' can be seen as an 'else'.
  * 
  * 
  */
