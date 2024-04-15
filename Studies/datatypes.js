@@ -45,3 +45,31 @@
  * what does that mean and how are they different?
  * 
  */
+
+//variable luckyNumber assigned to numeric 6
+let luckyNumber = 6;
+
+//string of 'Lyle' assigned to the variable of name
+let name = 'Lyle';
+
+/*boolean of true assigned to variable likesPizza. Generally when a variable is assigned
+to a boolean, the variable is written as a yes or no question*/
+let likesPizza = true; 
+
+//Here the variable flower is created but has not been assigned a value. 
+let flower;
+console.log(flower); // undefined will print to the console because it does not have a value
+flower = 'maypop'; //assigning the value of maypop to flower
+console.log(flower); // maypop will print to the console now
+
+//null is used to represent a value left intentionally blank
+let freeTime = null; //the variable freeTime is declared but has been intentionally left to equal null
+
+//Nan
+let a = 2;
+let b = '2';
+console.log(a + b); 
+
+//array
+//object
+//
