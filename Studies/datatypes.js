@@ -70,6 +70,18 @@ let a = 2;
 let b = '2';
 console.log(a + b); 
 
-//array
-//object
-//
+//array is a list held within square brackets and separated by a comma.
+let thisArray = [1, true, 'apple'];
+
+//object is a list with a relation to the data that it holds. It holds data in curly brackets
+let thisObject = {
+    fruit: 'apple', //key value pair of fruit/ apple
+    2: 'number', // 2 number
+    isBoolean: true, // and isboolean / true
+};
+
+//function sum takes two parameters and will return those two parameters added together
+function sum(a, b){
+    return a + b;
+}
+console.log(sum(2, 4)); //logging the function call to the console and expecting 6
