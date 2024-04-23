@@ -1,5 +1,7 @@
 /**
  * 
+ * LOOPS
+ * 
  * 0. Loops are built in constructs in JavaScript. They allow for a block of code to be 
  * repeated as many times as needed. Loops also iterate over collections of data and allow
  * programers to access the individual values held.
@@ -11,11 +13,17 @@
  * the code 
  * 
  * 
- * 2. Loops can count forward any number or pattern, or backwards to 0.
+ * 2. Loops can count forward any number or pattern, or backwards to 0. Loops are always given
+ * a start, an end, and a frequency of repetition. The repetition can be done with a single increment
+ * represented by ++ , a single decrement represented by -- , or a patern by reassigning with a += or -=
+ * followed by the number of which you want the code to skip forward.
  * 
- * 3. Loop over array forwards or backwards
+ * 3. Loops are also able to access an array forwards or backwards. The loop's start point will be the 
+ * last element of the array, the end point will be when the iteration is greater or equal to zero, and
+ * the repetition frequency will be the iteration with the decrement operator.
  * 
- * 4. Loop over an object
+ * 4. Looping over an object differs from looping over an array. A for - in loop must me used to access
+ * the keys and values of an object. It 
  */
 
 //for loop
