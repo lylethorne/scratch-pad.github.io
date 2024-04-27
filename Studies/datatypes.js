@@ -9,7 +9,7 @@
  * 1. Number represents numerical data, such as 1, 3.14159, etc...
  * 
  * 2. Strings are used to represent sentences or words and is represented by that text wrapped 
- * around quotes or backticks ('', "", ``)
+ * around quotes or backticks ('', "", ``). Strings have length, and indexes. 
  * 
  * 3. Boolean is the term used to represent a value that will either be true or false
  * 

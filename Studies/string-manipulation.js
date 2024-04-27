@@ -12,7 +12,8 @@
  * second string will be added to the last character of the first string - no spaces are betwen the two
  * unless added in manually. Now, what do you think we could do that with?
  * 
- * 2. With string methods
+ * 2. Strings also have methods that can be used on them - however the methods create a new string and
+ * do not alter the orginal. 
  * 
  */
 
@@ -28,4 +29,8 @@ let str1 = 'howdy';
 let str2 = 'pardnr';
 
 console.log(str1 + ' ' + str2); // 'howdy partner'
+
+// += using the example from above
+str1 += ' ' + str2; // str1 is now reassigned to the property of itself with a space and str2
+console.log(str1) // 'howdy partner'
 
