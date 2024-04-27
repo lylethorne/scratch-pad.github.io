@@ -1,4 +1,3 @@
-//4 TOTAL CODED EXAMPLES OF STRING MANIP WITH OPERATORS AND WITH STRING METHODS
 /**
  * 
  * STRING MANIPULATION  
@@ -18,19 +17,19 @@
  */
 
 
-
-
 //using charAt() toUpperCase() and slice() to capitalize the 'h' 
 let greeting = 'how nice the weather is today.';
              // change the character at 0 to Caps and add greeting slicicing off the 'h'
 greeting = greeting.charAt(0).toUpperCase() + greeting.slice(1);
 console.log(greeting); //'How nice the weather is today.' will print
 
+
 // + concatenate
 let str1 = 'howdy';
 let str2 = 'pardnr';
 
 console.log(str1 + ' ' + str2); // 'howdy partner'
+
 
 // += using the example from above
 str1 += ' ' + str2; // str1 is now reassigned to the property of itself with a space and str2
