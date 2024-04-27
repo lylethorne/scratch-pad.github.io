@@ -18,11 +18,13 @@
  */
 
 
-//charAt() will return whatever character is at the number placed within the ()
-let fruit = 'apple'; //initiz fruit to apple
-console.log(fruit.charAt(0)) //logging to console to see that the first character in fruit is 'a'
 
-//substring 
+
+//using charAt() toUpperCase() and slice() to capitalize the 'h' 
+let greeting = 'how nice the weather is today.';
+             // change the character at 0 to Caps and add greeting slicicing off the 'h'
+greeting = greeting.charAt(0).toUpperCase() + greeting.slice(1);
+console.log(greeting); //'How nice the weather is today.' will print
 
 // + concatenate
 let str1 = 'howdy';
