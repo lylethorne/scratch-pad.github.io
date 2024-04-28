@@ -42,7 +42,7 @@
  * 
  */
 
-// 1. Assignment operators
+// assignment operators
 //initializing count and assigning it to 1
 let count = 1;
 //assigning + 1 to whatever count is equal to // count now equal to 2
@@ -50,7 +50,7 @@ count += 1;
 //assigning - 2 to value of count // count is now 0
 count -= 2;
 
-// 2. Arithmetic operators
+//arithmetic operators
 //addition 
 let x = 2; // initz x to 2
 let y = 7; // initz y to 7
@@ -101,7 +101,7 @@ for(let i = l.length; i >= 0; i--){ // using a for loop to access the array in r
     console.log(l[i]); // prints 3 2 1
 }
 
-// 3. Comparison operators
+//comparison operators
 // equal to
 let j = 3; // initz j to number of 3
 if(j == '3'){ // if value of j is equal to a string value of 3
@@ -152,7 +152,7 @@ if(o <= 20){ //if o is less or equal to 20
     console.log('still under 20 though'); // print still under 20 though // it prints
 }
 
-// 4. Logical operators
+// logical operators
 //and 
 let p = 34; //initz p to 34
 let q = 22; // initz q to 22
@@ -170,13 +170,13 @@ let r = !true; // initz r to not true
 console.log(r); // prints false
 
 
-// 5. Unary operators
+//unary operators
 //delete
 let s = [1, 2, 3, 4]; // initz s to an array holding 1 thru 4
 delete s[2]; // deleting the value at the second index of s' array // 3 is deleted
 console.log(s); //prints [1, 2,, 4] because delete removes the value but not the index
 
-// 6. Ternary operator
+//ternary operator
 //simplifies the if/else statements
 let driveAge = (age < 16) ? 'cant drive yet':'now you can drive';
 //driveAge is assigned to the value of age if it is under 16 'cant drive yet' 

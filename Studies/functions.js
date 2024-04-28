@@ -36,9 +36,12 @@
  * the callback is to perform doesn't exist within the function already, but the scafolding is.
  * 
  * 
- * 6. Scope
+ * 6. In Javascript there are three different kinds of scope. There is the global scope, function scope
+ * and block scope. Functions have their own scope - meaning that variables that are declared within 
+ * them are not accessible outside the function. 
  * 
- * 7. Closures.
+ * 7. Closure is the term used for when a function has a function nested within itself that also
+ * references the outer scope of the function. 
  */
 
 //a basic function
@@ -46,3 +49,10 @@ function add(a,b){
     return a + b; // returning the sum of the two parameters
 }
 console.log(add(2,4)); // 6 will print to the console
+
+// variable sum is assigned to a function expression
+let sum = function(a, b){
+    return a + b;
+}
+console.log(sum(2,4)); // 6 will print to the console
+

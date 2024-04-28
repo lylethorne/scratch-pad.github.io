@@ -7,7 +7,7 @@
  * 
  * 
  * 1. In order to hold the data, the variable itself must be declared and then assigned 
- * to that data 
+ * to that data. Variables can hold simple and complex data types.  
  * 
  * 
  * 2. var, let, and const here... 
