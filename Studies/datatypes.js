@@ -41,8 +41,11 @@
  * and do not have an action. While complex data types are arrays, objects, and functions. Complex data types are
  * hold series of data and can perform actions on the data they hold.
  * 
- * 12. Primitive values are copied by value, while complex are copied by reference. 
- * what does that mean and how are they different?
+ * 12. Primitive values are copied by value. Copied by value means that when simple data types are declared, the value
+ * they are given will be what is copied. Rember that primitive data types are also immutatble - meaning they cant
+ * be changed. Complex data types are copied by reference to the value that they hold. An object will never be read
+ * by Javascript as equal to another object, even if it holds the same value properties as another. References are made
+ * to the value, and can alter the orginal object's data.
  * 
  */
 
@@ -85,3 +88,29 @@ function sum(a, b){
     return a + b;
 }
 console.log(sum(2, 4)); //logging the function call to the console and expecting 6
+
+//copied by value
+let apple = 'apple'; //initiz variable apple to value of string apple
+let graft = apple; //initiz graft to value of variable apple
+graft = 'lemon'; // reassigning graft to string of 'lemon
+console.log(apple); // is still 'apple'
+consolge.log(graft); // was reassigned to 'lemon'
+
+//coppied by reference
+//here is an object of fruits
+let fruits = {
+    a: 'apple',
+    b: 'banana',
+    c: 'cherry',
+}
+let crunch = fruits; // initix crunch to the object of fruit
+crunch.a = 'apricot'; // reassigning a value on crunch to appricot 
+
+console.log(fruits); //and because of copy by reference fruits now shows as
+/**
+ * {
+  "a": "apricot",
+  "b": "banana",
+  "c": "cherry"
+}
+ */
