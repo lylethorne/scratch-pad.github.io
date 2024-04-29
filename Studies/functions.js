@@ -25,7 +25,10 @@
  * var x = function name(parameter){ body }
  * 
  * 
- * 5. Optionally taking input and optionally returning an output 
+ * 5. Functions have the ability to optionally take input and optionally return an output. Functions
+ * even when not given a parameter upon definition, are able to receive an input when they are called
+ * and perform the code within their body. A function's code might not even return an output, it could
+ * simply update some data.  
  * 
  * Functions are treated as first-class objects in Javascript! 
  * First-class objects can be a parameter for a function, returned by a function,
@@ -41,7 +44,8 @@
  * them are not accessible outside the function. 
  * 
  * 7. Closure is the term used for when a function has a function nested within itself that also
- * references the outer scope of the function. 
+ * references the outer scope of the function. Closures are able to hold onto the variables even
+ * after the function has ran.
  */
 
 //a basic function
@@ -56,3 +60,28 @@ let sum = function(a, b){
 }
 console.log(sum(2,4)); // 6 will print to the console
 
+//scope
+//global scope
+let name = 'lyle'
+
+function globalExamp(){
+    console.log(name); //accesses name from global scope
+}
+globalExamp(); //calling the function prints 'lyle'
+
+//local scope 
+function localExamp(){
+    let loc = 'Im local';
+}
+console.log(loc); //will resuilt in an error because loc is function scoped
+
+//closure
+function counter(){
+    let count = 0; //count is declared in the parental scope
+    return function(){  //this closure has access to count and will increment it each
+       return count++;  // time the function counter gets called
+    }
+}
+
+let increase = counter(); //initiz variable increase to the value of counter func
+console.log(increase()); // output will be 1
